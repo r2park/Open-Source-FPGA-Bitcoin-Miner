@@ -1,0 +1,197 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\WORKSTATION\Documents\Dropbox\School\Fall2012\ECE111\HW3
+vch
+Z1 I]<SV>F9cO34ffNXb4clPd3
+Z2 V1MhGhU5KLk;HY84CKcj3N2
+Z3 dC:\Users\WORKSTATION\Documents\GitHub\Open-Source-FPGA-Bitcoin-Miner\src\DE1
+Z4 w1355460011
+Z5 8C:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/sha-256-functions.v
+Z6 FC:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/sha-256-functions.v
+L0 45
+Z7 OV;L;6.6d;45
+r1
+31
+Z8 !s102 -nocovercells
+Z9 o-work 00_miner -nocovercells -O0
+Z10 !s100 ?OQ`>c_mF;Obm68c_Y3Y42
+!s85 0
+!s101 -O0
+ve0
+Z11 Ii4^gC[`IOSnM57_:;U_I=3
+Z12 VN^L_?kX]_^B1IEW2ajOYS0
+R3
+R4
+R5
+R6
+L0 25
+R7
+r1
+31
+R8
+R9
+Z13 !s100 FPB<Co^eW[jZ`97lCHFF;1
+!s85 0
+!s101 -O0
+ve1
+Z14 IaGMTc>>Vfjn65OlcQ62do2
+Z15 VQHe1VCRP[D0Gb=_h19]1f1
+R3
+R4
+R5
+R6
+L0 35
+R7
+r1
+31
+R8
+R9
+Z16 !s100 :ShL7Ei^DX[S8`XjHlX]82
+!s85 0
+!s101 -O0
+vfpgaminer_top
+Z17 IbE:?o>OCAKDjo]8=]:^h`3
+Z18 VFbDmY5Imzk?jH9EYa[9N:3
+R3
+Z19 w1355460765
+Z20 8C:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/fpgaminer_top.v
+Z21 FC:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/fpgaminer_top.v
+L0 25
+R7
+r1
+31
+R8
+R9
+Z22 !s100 OQE@2;_IQofzQSCnkinme2
+!s85 0
+!s101 -O0
+vmain_pll
+Z23 I^h1WN5`_DfH0[[O;7<Z];3
+Z24 V]4Xad2_L0F8TRD54Qj]8z0
+R3
+Z25 w1355460010
+Z26 8C:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/DE1/main_pll.v
+Z27 FC:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/DE1/main_pll.v
+L0 1
+R7
+r1
+31
+R9
+Z28 !s100 P6YIfSe6EKN0X2QLkhaWg2
+R8
+!s85 0
+!s101 -O0
+vmaj
+Z29 IF>Yz=hb[2JCH81Meg;lZk3
+Z30 VkdUKbD;Wlg8KB[2A9UUI52
+R3
+R4
+R5
+R6
+L0 55
+R7
+r1
+31
+R8
+R9
+Z31 !s100 P2LedjFW;aaPUKNklJ`j:1
+!s85 0
+!s101 -O0
+vs0
+Z32 IfXD8=h0L[<9=mP@TO37Ni2
+Z33 Vi_GZ[ch^6>k<2EEdhO^9T1
+R3
+R4
+R5
+R6
+L0 65
+R7
+r1
+31
+R8
+R9
+Z34 !s100 i6We@ec[]AN;l^2MoDLPZ1
+!s85 0
+!s101 -O0
+vs1
+Z35 Ih1`9OcFX;l8ddb_4HRni40
+Z36 VNX1_Gk=@SKZ3HbV2QO6=j1
+R3
+R4
+R5
+R6
+L0 76
+R7
+r1
+31
+R8
+R9
+Z37 !s100 RJ?a5ai8d0V@SHR:z7emW0
+!s85 0
+!s101 -O0
+vsha256_digester
+Z38 IjN81M0UJ8CO<WdOZzckm^0
+Z39 V;fCM8[zgJfb`Odk=O1e033
+R3
+R4
+Z40 8C:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/sha256_transform.v
+Z41 FC:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/sha256_transform.v
+Z42 L0 118
+R7
+r1
+31
+R8
+R9
+Z43 !s100 @zeU[9QNHPQ[=_C>ABKI;2
+!s85 0
+!s101 -O0
+vsha256_transform
+Z44 I]HbN<28J<F9N@B`dlAFcR3
+Z45 V?I=OSnPaCe0YoE2G5kTCn2
+R3
+R4
+R40
+R41
+L0 38
+R7
+r1
+31
+R8
+R9
+Z46 !s100 ;F]9_ddmihT0681YSe1;a3
+!s85 0
+!s101 -O0
+vtest_fpgaminer_top
+!s100 2b_G:<HR<XYiJ88SHiE;Z1
+I0hS@oS2egFfzX;Lo:Y9Lz3
+VIJGB=gOBz`FC_nL0ScYTL1
+R3
+R4
+8C:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/testbenches/test_fpgaminer_top.v
+FC:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/testbenches/test_fpgaminer_top.v
+L0 8
+R7
+r1
+!s85 0
+31
+!s101 -O0
+R8
+R9
+vvirtual_wire
+Z47 ITbiXho=d3UmlQn71JQ0lD1
+Z48 V6i[>S?HSLhT2LXY2Hhji]3
+R3
+R4
+Z49 8C:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/virtual_wire.v
+Z50 FC:/Users/WORKSTATION/Documents/GitHub/Open-Source-FPGA-Bitcoin-Miner/src/virtual_wire.v
+L0 23
+R7
+r1
+31
+R8
+R9
+Z51 !s100 bhWTE;<2`c8NUIY_c_O1n0
+!s85 0
+!s101 -O0

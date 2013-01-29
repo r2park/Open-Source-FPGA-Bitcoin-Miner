@@ -67,13 +67,13 @@ proc wait_for_golden_ticket {timeout} {
 	global global_start_time
 
 	
-	#puts "Current nonce"
-	#set current_nonce [read_instance GNON]
-	#puts $current_nonce
+	puts "Current nonce"
+	set current_nonce [read_instance GNON]
+	puts $current_nonce
 	set last_nonce [get_current_fpga_nonce]
 	set begin_time [clock clicks -milliseconds]
 
-	#puts "FPGA is now searching for lottery ticket..."
+	puts "FPGA is now searching for lottery ticket..."
 
 	while {$timeout > 0} {
 		set golden_nonce [get_result_from_fpga]
@@ -126,6 +126,8 @@ proc submit_nonce {workl golden_nonce} {
 	global url
 	global userpass
 
+    puts "submit nonce"
+
 	array set work $workl
 
 	set share(data) $work(data)
@@ -174,7 +176,6 @@ while {1} {
 		if {$golden_nonce != -1 && [array exists work]} {
 			submit_nonce [array get work] $golden_nonce
 		}
-
 		push_work_to_fpga $newwork
 		unset work
 		array set work $newwork
@@ -188,7 +189,6 @@ while {1} {
 	# Getting new work every 20 seconds helps prevent stale shares.
 	# TODO: Implement Long Polling ... :P
 	set golden_nonce [wait_for_golden_ticket 20]
-
 	if {$golden_nonce == -1 || ![array exists work]} {
 		continue
 	}

@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Access Violation at 0X1250A5D4</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	 0x1250a5d3: resr_rpwq + 0x1a5d3 (?build_folder@RPWQ_REPORT_TOC_VIEW@@IAEHPAVRDB_FOLDER_OBJECT@@PAVQStandardItem@@PAVRDB_OBJECT@@AAPAV3@V?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@@Z + 0x113)
+	 0x1250ac56: resr_rpwq + 0x1ac56 (?build_folder@RPWQ_REPORT_TOC_VIEW@@IAEHPAVRDB_FOLDER_OBJECT@@PAVQStandardItem@@PAVRDB_OBJECT@@AAPAV3@V?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@@Z + 0x796)
+	 0x1251323c: resr_rpwq + 0x2323c (?load_report@RPWQ_REPORT_TOC_VIEW@@QAEX_NPBD@Z + 0x34c)
+	 0x12513c58: resr_rpwq + 0x23c58 (?load_report@RPWQ_REPORT_TOC_DOCK_WIDGET@@UAEX_NPBD@Z + 0x68)
+	 0x124f2d66: resr_rpwq + 0x2d66 (?do_load_report@RPWQ_FRAME_WND@@IAE_NABVQString@@@Z + 0x46)
+	 0x124fafc0: resr_rpwq + 0xafc0 (?on_rdb_cache_freed@RPWQ_NTFQ_HANDLER@@QAE_NI_N@Z + 0x30)
+	  0x13d11fb: ccl_ntfq + 0x11fb (?dispatch_notify_msg@NTFQ_NOTIFY_TARGET@@IAE_NPBVNTFQ_NOTIFY_MAP@@II_N@Z + 0x3b)
+	  0x13d1312: ccl_ntfq + 0x1312 (?on_ntfq_notify@NTFQ_NOTIFY_TARGET@@UAE_NII_N@Z + 0x22)
+	  0x13d1750: ccl_ntfq + 0x1750 (?broadcast_notify@NTFQ_NOTIFY_MGR@@UAE_NII@Z + 0x60)
+	  0x13d1947: ccl_ntfq + 0x1947 (?ntfq_broadcast_notify@@YA_NII@Z + 0x17)
+	  0x16a12bc: DB_DBMUI + 0x12bc (?on_rdb_updated@DBMUI_MANAGER@@QAE_NI_N@Z + 0x2c)
+	  0x13d11fb: ccl_ntfq + 0x11fb (?dispatch_notify_msg@NTFQ_NOTIFY_TARGET@@IAE_NPBVNTFQ_NOTIFY_MAP@@II_N@Z + 0x3b)
+	  0x13d1312: ccl_ntfq + 0x1312 (?on_ntfq_notify@NTFQ_NOTIFY_TARGET@@UAE_NII_N@Z + 0x22)
+	  0x13d1750: ccl_ntfq + 0x1750 (?broadcast_notify@NTFQ_NOTIFY_MGR@@UAE_NII@Z + 0x60)
+	  0x13d1947: ccl_ntfq + 0x1947 (?ntfq_broadcast_notify@@YA_NII@Z + 0x17)
+	  0x3daff5e: sys_flow + 0x2ff5e (?refresh@FLOW_STATUS@@QAEXXZ + 0x1e)
+	  0x3d911a5: sys_flow + 0x111a5 (?flow_generic_parallel_call_helper@@YA?AW4GEN_EXE_RETURN_CODE@@PAVFLOW_FACADE@@PAV?$list@UFLOW_CALL_INFO@@V?$MEM_STL_ALLOCATOR@UFLOW_CALL_INFO@@@@@_Dinkum_std@@_N@Z + 0xc05)
+	  0x3d91710: sys_flow + 0x11710 (?flow_generic_parallel_call@@YA?AW4GEN_EXE_RETURN_CODE@@PAVFLOW_FACADE@@PAV?$list@UFLOW_CALL_INFO@@V?$MEM_STL_ALLOCATOR@UFLOW_CALL_INFO@@@@@_Dinkum_std@@@Z + 0x10)
+	  0x3d9e209: sys_flow + 0x1e209 (?flow_full_compile_or_simulate@@YA?AW4GEN_EXE_RETURN_CODE@@PAVFLOW_FACADE@@UFLOW_INFO@@_NPAV?$vector@V?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@V?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@@@@_Dinkum_std@@@Z + 0x1799)
+	  0x3d9eacf: sys_flow + 0x1eacf (?flow_incremental_compilation@@YA?AW4GEN_EXE_RETURN_CODE@@PAVFLOW_FACADE@@UFLOW_INFO@@@Z + 0x1f)
+	  0x3d945dd: sys_flow + 0x145dd (_flow_execute_custom + 0x6cd)
+	  0x3d95044: sys_flow + 0x15044 (_flow_execute + 0x44)
+	  0x3c1e182: SYS_QUI + 0x6e182 (?on_start_flow@QUI_APP@@MAE?AW4GEN_EXE_RETURN_CODE@@HVQString@@@Z + 0x2a2)
+	  0x3c039ca: SYS_QUI + 0x539ca (?qt_metacall@QUI_APP@@UAEHW4Call@QMetaObject@@HPAPAX@Z + 0xba)
+	 0x670e0eae: QtCore4 + 0xe0eae (?metacall@QMetaObject@@SAHPAVQObject@@W4Call@1@HPAPAX@Z + 0x3e)
+	 0x6501c6b9: QtGui4 + 0x1c6b9 (?event@QApplication@@MAE_NPAVQEvent@@@Z + 0x359)
+	 0x670fcba2: QtCore4 + 0xfcba2 (?event@QEventDispatcherWin32@@UAE_NPAVQEvent@@@Z + 0x112)
+	 0x670dbaac: QtCore4 + 0xdbaac (?sendThroughApplicationEventFilters@QCoreApplicationPrivate@@QAE_NPAVQObject@@PAVQEvent@@@Z + 0x5c)
+	 0x6501d068: QtGui4 + 0x1d068 (?notify_helper@QApplicationPrivate@@QAE_NPAVQObject@@PAVQEvent@@@Z + 0xb8)
+	 0x6501f94c: QtGui4 + 0x1f94c (?notify@QApplication@@UAE_NPAVQObject@@PAVQEvent@@@Z + 0x136c)
+	 0x6505c73a: QtGui4 + 0x5c73a (?childAt@QWidget@@QBEPAV1@ABVQPoint@@@Z + 0x3a)
+	   0x411b91: CCL_MSG + 0x1b91 (?msg_main_thread@@YAPAXPAX@Z + 0x11)
+	   0xe18f73: SYS_QGQ + 0x8f73 (?metaObject@QUI_APP@@UBEPBUQMetaObject@@XZ + 0x5)
+	   0xe1106f: SYS_QGQ + 0x106f (??1QGQ_APP@@UAE@XZ + 0x3f)
+	   0xe191e9: SYS_QGQ + 0x91e9 (?on_locate_in_design_file@QUI_FRAME_WND@@MAEXXZ + 0x5)
+	   0xe19417: SYS_QGQ + 0x9417 (?focusNextPrevChild@QLabel@@MAE_N_N@Z + 0x5)
+	   0xe1941d: SYS_QGQ + 0x941d (?eventFilter@QObject@@UAE_NPAV1@PAVQEvent@@@Z + 0x5)
+	   0xe19423: SYS_QGQ + 0x9423 (?timerEvent@QObject@@MAEXPAVQTimerEvent@@@Z + 0x5)
+	   0xe19429: SYS_QGQ + 0x9429 (?childEvent@QObject@@MAEXPAVQChildEvent@@@Z + 0x5)
+	   0xe1942f: SYS_QGQ + 0x942f (?customEvent@QObject@@MAEXPAVQEvent@@@Z + 0x5)
+	   0xe19435: SYS_QGQ + 0x9435 (?connectNotify@QObject@@MAEXPBD@Z + 0x5)
+	   0xe191ef: SYS_QGQ + 0x91ef (?event@QApplication@@MAE_NPAVQEvent@@@Z + 0x5)
+	   0xe1943b: SYS_QGQ + 0x943b (?disconnectNotify@QObject@@MAEXPBD@Z + 0x5)
+	   0xe191f5: SYS_QGQ + 0x91f5 (?notify@QApplication@@UAE_NPAVQObject@@PAVQEvent@@@Z + 0x5)
+	   0xe191fb: SYS_QGQ + 0x91fb (?compressEvent@QApplication@@MAE_NPAVQEvent@@PAVQObject@@PAVQPostEventList@@@Z + 0x5)
+	   0xe19201: SYS_QGQ + 0x9201 (?commitData@QApplication@@UAEXAAVQSessionManager@@@Z + 0x5)
+	   0xe175ef: SYS_QGQ + 0x75ef (??_EQGQ_MAIN_WINDOW@@W7AEPAXI@Z + 0xf)
+	   0xe18f7f: SYS_QGQ + 0x8f7f (?qt_metacall@QUI_APP@@UAEHW4Call@QMetaObject@@HPAPAX@Z + 0x5)
+	   0xe18f85: SYS_QGQ + 0x8f85 (?exit_instance@QUI_APP@@UAEXXZ + 0x5)
+	   0xe18f8b: SYS_QGQ + 0x8f8b (?get_main_window@QUI_APP@@UAEPAVAFCQ_MAIN_WINDOW@@XZ + 0x5)
+	   0xe18f91: SYS_QGQ + 0x8f91 (?get_prj_ui_mgr@QUI_APP@@UAEPAVQUI_PRJ_UI_MGR@@XZ + 0x5)
+	   0xe18f97: SYS_QGQ + 0x8f97 (?process_cmdline_arguments_pre_main_wnd_create@QUI_APP@@MAEXPAVQUI_CMDLINE@@@Z + 0x5)
+	   0xe18f9d: SYS_QGQ + 0x8f9d (?process_cmdline_arguments_post_main_wnd_show@QUI_APP@@MAEXPAVQUI_CMDLINE@@@Z + 0x5)
+	   0xe18fa3: SYS_QGQ + 0x8fa3 (?process_cmdline_arguments_post_main_wnd_create@QUI_APP@@MAE_NPAVQUI_CMDLINE@@@Z + 0x5)
+	 0x5f62646c:
+	 0x5f6e7963:
+	 0x656c6965: QtGui4 + 0x6c6965 (?staticMetaObject@QGraphicsOpacityEffect@@2UQMetaObject@@B + 0x1190c9)
+	 0x77656e5e:
+	 0x676c645e:
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2012/12/13 22:37:00</DateInvoked>
+		<ElapsedTime>8771</ElapsedTime>
+		<IP>192.168.0.4,192.168.30.1,192.168.158.1</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>2800</CPUSpeed>
+			<Hostname>WORKSTATION</Hostname>
+			<NIC>
+				<Address>00ff709d2796</Address>
+			</NIC>
+			<NIC>
+				<Address>4061862bad7d</Address>
+			</NIC>
+			<NIC>
+				<Address>005056c00001</Address>
+			</NIC>
+			<NIC>
+				<Address>005056c00008</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.1</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+			<TotalVirtualRAM>0</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>70787607014781.131700089806356</InstallationID>
+			<Version>
+				<Build>157</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>0</ServicePack>
+				<VersionNumber>11</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>1097106007958.135546682409252</UserID>
+			<UserName>WORKSTATION</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2011-03-02</SchemaVersion>
+</ProgramExecution>
+
